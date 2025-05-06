@@ -1,0 +1,107 @@
+# Baboon Dance Similarity Project
+
+This repository contains all code, data, and outputs for the **Baboon Dance Similarity Project**, a digital humanities and computational ethnomusicology initiative.
+
+The project analyzes the rhythmic, melodic, and embedding-based features of *Baboon Dance* (Lokono/Arawak, Guyana) and compares them to over 40 Indigenous ceremonial songs from South and Mesoamerica using Music Information Retrieval (MIR) techniques.
+
+## Folder Structure
+```
+BaboonDance-Similarity/
+├── README.md
+├── requirements.txt
+├── environment.R
+├── data/
+├── notebooks/Python/
+├── notebooks/R/
+├── scripts/Python/
+├── scripts/R/
+├── outputs/
+```
+
+## Features
+- OpenL3, MFCC, and YAMNet embedding analysis
+- Cosine similarity calculations
+- PCA and t-SNE dimensionality reduction
+- Tempo, syncopation, onset, and beat interval analyses
+- Visualizations including dot plots, ancestry trees, and rhythmic profiles
+
+## Technologies Used
+- **Python:** librosa, openl3, numpy, pandas, scikit-learn, seaborn, matplotlib
+- **R:** tidyverse, ggplot2, factoextra, plotly
+
+## Setup Instructions
+
+### Python
+1. Install dependencies:
+```
+pip install -r requirements.txt
+```
+
+2. Run Colab notebooks in `notebooks/Python/` or locally in Jupyter.
+
+### R
+1. Load R environment:
+```
+source('environment.R')
+```
+
+2. Run RMarkdown scripts in `notebooks/R/`.
+
+## requirements.txt
+```
+librosa
+openl3
+numpy
+pandas
+scikit-learn
+seaborn
+matplotlib
+plotly
+jupyter
+```
+
+## environment.R
+```R
+install.packages(c("tidyverse", "ggplot2", "factoextra", "plotly", "readr"))
+library(tidyverse)
+library(ggplot2)
+library(factoextra)
+library(plotly)
+library(readr)
+```
+
+## Python Notebooks
+- **01_FeatureExtraction_OpenL3.ipynb**
+  - Load CSV embeddings
+  - Inspect data shapes
+  - Prepare feature matrices
+
+- **02_CosineSimilarity_Analysis.ipynb**
+  - Calculate cosine similarity
+  - Identify top similar songs
+  - Export similarity table
+
+- **03_PCA_tSNE_Visualization.ipynb**
+  - Apply PCA and t-SNE
+  - Plot embeddings in 2D
+
+- **04_Rhythm_Melody_TemporalFeatures.ipynb**
+  - Analyze tempograms, onset curves, pitch contours
+
+## R Notebooks
+- **01_FeatureProcessing_Merging.Rmd**
+  - Import and merge CSV files
+  - Clean and reshape data
+
+- **02_PCA_tSNE_in_R.Rmd**
+  - Apply PCA/t-SNE on R side
+  - Visualize clusters
+
+- **03_SimilarityGraph_Visualization.Rmd**
+  - Plot similarity heatmaps, dot plots, ancestry trees
+
+- **04_Rhythmic_Metrics_and_Export.Rmd**
+  - Beat intervals, syncopation plots
+  - Export final visualizations
+
+
