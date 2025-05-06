@@ -1,0 +1,51 @@
+# Baboon Dance Similarity Project
+
+This repository contains all code, data, and outputs for the **Baboon Dance Similarity Project**, a digital humanities and computational ethnomusicology initiative.
+
+The project analyzes the rhythmic, melodic, and embedding-based features of *Baboon Dance* (Lokono/Arawak, Guyana) and compares them to over 40 Indigenous ceremonial songs from South and Mesoamerica using Music Information Retrieval (MIR) techniques.
+
+## Folder Structure
+
+```
+BaboonDance-Similarity/
+├── README.md
+├── requirements.txt
+├── environment.R
+├── data/
+├── notebooks/Python/
+├── notebooks/R/
+├── scripts/Python/
+├── scripts/R/
+├── outputs/
+```
+
+## Features
+- OpenL3, MFCC, and YAMNet embedding analysis
+- Cosine similarity calculations
+- PCA and t-SNE dimensionality reduction
+- Tempo, syncopation, onset, and beat interval analyses
+- Visualizations including dot plots, ancestry trees, and rhythmic profiles
+
+## Technologies Used
+- **Python:** librosa, openl3, numpy, pandas, scikit-learn, seaborn, matplotlib
+- **R:** tidyverse, ggplot2, factoextra, plotly
+
+## Setup Instructions
+
+### Python
+1. Install dependencies:
+```
+pip install -r requirements.txt
+```
+
+2. Run Colab notebooks in `notebooks/Python/` or locally in Jupyter.
+
+### R
+1. Load R environment:
+```
+source('environment.R')
+```
+
+2. Run RMarkdown scripts in `notebooks/R/`.
+
+
